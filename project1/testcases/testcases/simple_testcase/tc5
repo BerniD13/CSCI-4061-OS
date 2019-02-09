@@ -1,0 +1,14 @@
+all: test1
+	echo step5
+
+test1: test2 test3
+	echo step4
+
+test2: test4
+	echo step2
+
+test3: test4
+	echo step3
+
+test4:
+	echo step1
